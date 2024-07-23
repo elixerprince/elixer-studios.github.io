@@ -1,0 +1,62 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  /*------------------------------------- 
+                DEFAULT COLORS
+  ---------------------------------------*/
+  --brand-color-translucent: rgba(128, 0, 255, 0.5);
+  --primary-color-translucent: rgba(0, 0, 0, 0.5);
+
+  /*------------------------------------- 
+                 GRADIENTS
+  ---------------------------------------*/
+  --banner-gradient: linear-gradient(
+      var(--brand-color-translucent),
+      var(--brand-color-translucent),
+      var(--primary-color-translucent)
+    );
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  transition: all 0.15s;
+}
+
+.main-header {
+  min-height: 100vh;
+}
+
+.subheader {
+  min-height: 50vh;
+}
+
+.home-header {
+  background-image: var(--banner-gradient), url("https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.artworks-header {
+  background-image: var(--banner-gradient), url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-background {
+  background-image: var(--banner-gradient), url("https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-title {
+  background-color: var(--primary-color-translucent);
+}
