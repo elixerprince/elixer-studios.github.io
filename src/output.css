@@ -676,6 +676,15 @@ video {
   max-height: 20rem;
 }
 
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -695,6 +704,11 @@ video {
 
 .min-w-80 {
   min-width: 20rem;
+}
+
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .cursor-pointer {

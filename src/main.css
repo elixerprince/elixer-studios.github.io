@@ -24,12 +24,7 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  transition: all 0.15s;
-}
-
-.main-header {
-  min-height: 100vh;
+  transition: all 0.15s; // Sets default value for smooth animation
 }
 
 .subheader {
