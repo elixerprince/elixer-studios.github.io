@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNavbar: any = document.querySelector("#mobile-navbar");
   const closeButton: any = document.querySelector("#close-btn");
 
-  alert("Hello World");
-
   const openMenu = () => {
     hamburgerIcon.classList.add("hidden");
     mobileNavbar.classList.remove("hidden");
