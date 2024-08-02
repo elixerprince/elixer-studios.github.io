@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-JM">
   <head>
     <meta charset="UTF-8" />
@@ -25,10 +25,12 @@
   </head>
 
   <body>
-    <div class="flex flex-col bg-purple-200 min-w-fit">
-      <header class="main-header home-header flex text-white pt-16 pb-8 px-12 min-h-screen min-w-full">
+    <div class="flex min-w-fit flex-col bg-purple-200">
+      <header
+        class="main-header home-header flex min-h-screen min-w-full px-12 pb-8 pt-16 text-white"
+      >
         <nav
-          class="flex z-10 justify-between ps-12 pe-8 py-4 fixed left-0 right-0 top-0 bg-black"
+          class="fixed left-0 right-0 top-0 z-10 flex justify-between bg-black py-4 pe-8 ps-12"
         >
           <a href="#"
             ><img
@@ -41,130 +43,189 @@
               <li>
                 <a
                   href="#"
-                  class="border-2 border-white bg-white text-black px-4 py-2 me-2 rounded-lg"
+                  class="me-2 rounded-lg border-2 border-white bg-white px-4 py-2 text-black"
                   ><i class="fa-solid fa-house"></i> Home</a
                 >
               </li>
               <li>
                 <a
                   href="completed-artworks.html"
-                  class="border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                  class="rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                   ><i class="fa-solid fa-image"></i> Completed Artworks</a
                 >
               </li>
               <li class="border-l-2 border-white">
                 <a
                   href="contact-me.html"
-                  class="border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                  class="rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                   >Contact Me <i class="fa-solid fa-phone-flip"></i
                 ></a>
               </li>
             </ul>
             <div class="md:hidden" id="hamburg-icon">
-              <i
-              class="fa-solid fa-bars hover:cursor-pointer text-2xl"
-            ></i>
+              <i class="fa-solid fa-bars text-2xl hover:cursor-pointer"></i>
             </div>
           </div>
         </nav>
-        <div class="lg:flex lg:mt-8">
-          <p class="text-center text-4xl font-bold my-8 lg:hidden">
+        <div class="lg:mt-8 lg:flex">
+          <p class="my-8 text-center text-4xl font-bold lg:hidden">
             Are you looking for custom illustrations?
           </p>
           <div
-            class="flex min-w-80 max-h-80 aspect-square rounded-full m-auto border-white border-4 lg:mt-8 my-4 hover:scale-105 xl:me-4"
+            class="m-auto my-4 flex aspect-square max-h-80 min-w-80 rounded-full border-4 border-white hover:scale-105 lg:mt-8 xl:me-4"
           >
             <img
               src="./dist/images/wlop-eye-study.jpg"
               alt="Elixer Prince Profile Picture"
-              class="w-full aspect-square rounded-full flex"
+              class="flex aspect-square w-full rounded-full"
             />
           </div>
           <div class="flex flex-col justify-center">
-            <p class="text-center text-5xl font-bold hidden lg:block mb-2">
+            <p class="mb-2 hidden text-center text-5xl font-bold lg:block">
               Are you looking for custom illustrations?
             </p>
-            <p class="font-bold my-4 text-center text-lg md:text-xl">
+            <p class="my-4 text-center text-lg font-bold md:text-xl">
               Elixer Studios is an illustration studio that makes illustrations
               based on your needs.
             </p>
             <a
               href="#about-me-section"
-              class="block mx-auto my-4 w-fit border-4 border-yellow-500 hover:border-yellow-600 bg-yellow-500 hover:bg-yellow-600 text-black hover:text-white font-bold px-4 py-2 rounded-lg md:text-lg"
-              >Learn More <i class="fa-solid fa-caret-down text-lg"></i></i
+              class="mx-auto my-4 block w-fit rounded-lg border-4 border-yellow-500 bg-yellow-500 px-4 py-2 font-bold text-black hover:border-yellow-600 hover:bg-yellow-600 hover:text-white md:text-lg"
+              >Learn More <i class="fa-solid fa-caret-down text-lg"></i
             ></a>
           </div>
         </div>
-        <nav id="mobile-navbar" class="hidden md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black text-white z-20">
-          <div class="flex justify-between items-center ps-12 pe-8 py-4">
+        <nav
+          id="mobile-navbar"
+          class="fixed bottom-0 left-0 right-0 top-0 z-20 hidden bg-black text-white md:hidden"
+        >
+          <div class="flex items-center justify-between py-4 pe-8 ps-12">
             <a href="#"
-            ><img
-              src="./dist/images/site-logo.png"
-              alt="Elixer Studios Logo"
-              class="w-36 hover:scale-105"
+              ><img
+                src="./dist/images/site-logo.png"
+                alt="Elixer Studios Logo"
+                class="w-36 hover:scale-105"
             /></a>
-            <i id="close-btn" class="fa-solid fa-xmark text-3xl cursor-pointer"></i>
+            <i
+              id="close-btn"
+              class="fa-solid fa-xmark cursor-pointer text-3xl"
+            ></i>
           </div>
-          <ul class="font-bold flex flex-col justify-center p-4">
+          <ul class="flex flex-col justify-center p-4 font-bold">
             <li class="my-2">
               <a
                 href="#"
-                class="block border-2 border-white bg-white text-black px-4 py-2 rounded-lg"
+                class="block rounded-lg border-2 border-white bg-white px-4 py-2 text-black"
                 ><i class="fa-solid fa-house"></i> Home</a
               >
             </li>
             <li class="my-2">
               <a
                 href="completed-artworks.html"
-                class="block border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                class="block rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                 ><i class="fa-solid fa-image"></i> Completed Artworks</a
               >
             </li>
             <li class="my-2">
               <a
                 href="contact-me.html"
-                class="block border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
-                ><i class="fa-solid fa-phone-flip"></i> Contact Me</i
-              ></a>
+                class="block rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
+                ><i class="fa-solid fa-phone-flip"></i> Contact Me</a
+              >
             </li>
           </ul>
-          <footer class="border-y-2 border-white bg-red mt-4 py-8">
-            <p class="text-center text-zinc-100 text-xs">Copyright &copy; All Rights Reserved Elixer Prince</p>
-          </footer>
+          <div class="bg-red mt-4 border-y-2 border-white py-8">
+            <p class="text-center text-xs text-zinc-100">
+              Copyright &copy; All Rights Reserved Elixer Prince
+            </p>
+          </div>
         </nav>
       </header>
-      
+
       <main>
-        <section id="about-me-section" class="px-4 py-8 lg:py-12 bg-zinc-950 text-white" aria-labelledby="about-me-heading">
+        <section
+          id="about-me-section"
+          class="bg-zinc-950 px-4 py-8 text-white lg:py-12"
+          aria-labelledby="about-me-heading"
+        >
           <header>
-            <h2 id="about-me-heading" class="text-center font-bold text-4xl mb-4">About Me</h2>
+            <h2
+              id="about-me-heading"
+              class="mb-4 text-center text-4xl font-bold"
+            >
+              About Me
+            </h2>
           </header>
           <p class="font-bold md:text-lg">
             I am a self-taught artist from Kingston, Jamaica
-            <span title="Jamaica" class="me-1">🇯🇲</span>. I'm very passionate about creating
-            stunning illustrations and brining your ideas to life.
+            <span title="Jamaica" class="me-1">🇯🇲</span>. I'm very passionate
+            about creating stunning illustrations and brining your ideas to
+            life.
           </p>
         </section>
-        <section id="ofers-section" class="bg-white py-4 px-8 m-4 border-l-8 rounded-xl border-black shadow-xl" aria-labelledby="offers-heading">
+        <section
+          id="ofers-section"
+          class="m-4 rounded-xl border-l-8 border-black bg-white px-8 py-4 shadow-xl"
+          aria-labelledby="offers-heading"
+        >
           <header>
-            <h2 id="offers-heading" class="text-center font-bold text-4xl mb-4 border-b-4 border-zinc-200 pb-4">What I Offer</h2>
+            <h2
+              id="offers-heading"
+              class="mb-4 border-b-4 border-zinc-200 pb-4 text-center text-4xl font-bold"
+            >
+              What I Offer
+            </h2>
           </header>
           <ol class="font-bold md:text-lg">
-            <li class="hover:bg-black hover:text-white mb-2 md:ms-2 hover:scale-105 hover:mx-4 rounded-l-2xl rounded-r-md p-2 ps-4"><a href="completed-artworks.html#anime-cartoon-section" class="block">1. Anime/Cartoon Illustrations (Done to Order)</a></li>
-            <li class="hover:bg-black hover:text-white mb-2 md:ms-2 hover:scale-105 hover:mx-4 rounded-l-2xl rounded-r-md p-2 ps-4"><a href="completed-artworks.html#semi-realistic-section"class="block">2. Semi-realistic/Stylized Illustrations (Done to Order)</a>
+            <li
+              class="mb-2 rounded-l-2xl rounded-r-md p-2 ps-4 hover:mx-4 hover:scale-105 hover:bg-black hover:text-white md:ms-2"
+            >
+              <a
+                href="completed-artworks.html#anime-cartoon-section"
+                class="block"
+                >1. Anime/Cartoon Illustrations (Done to Order)</a
+              >
             </li>
-            <li class="hover:bg-black hover:text-white md:ms-2  hover:scale-105 hover:mx-4 rounded-l-2xl rounded-r-md p-2 ps-4"><a href="completed-artworks.html#portrait-requests-section" class="block">3. Custom Portraits (Done to Order)</a></li>
+            <li
+              class="mb-2 rounded-l-2xl rounded-r-md p-2 ps-4 hover:mx-4 hover:scale-105 hover:bg-black hover:text-white md:ms-2"
+            >
+              <a
+                href="completed-artworks.html#semi-realistic-section"
+                class="block"
+                >2. Semi-realistic/Stylized Illustrations (Done to Order)</a
+              >
+            </li>
+            <li
+              class="rounded-l-2xl rounded-r-md p-2 ps-4 hover:mx-4 hover:scale-105 hover:bg-black hover:text-white md:ms-2"
+            >
+              <a
+                href="completed-artworks.html#portrait-requests-section"
+                class="block"
+                >3. Custom Portraits (Done to Order)</a
+              >
+            </li>
           </ol>
         </section>
-        <section id="testimonials--section" class="p-8" aria-labelledby="testimonials-heading">
+        <section
+          id="testimonials--section"
+          class="p-8"
+          aria-labelledby="testimonials-heading"
+        >
           <header>
-            <h2 id="testimonials-heading" class="text-center font-bold text-4xl mb-4">Testimonials</h2>
+            <h2
+              id="testimonials-heading"
+              class="mb-4 text-center text-4xl font-bold"
+            >
+              Testimonials
+            </h2>
           </header>
           <p class="text-center text-lg">No testimonials as yet. . .</p>
         </section>
       </main>
-      <footer class="p-4 bg-zinc-900 rounded-t-xl">
-        <p class="text-center font-bold text-zinc-100 text-xs md:text-md">Copyright &copy; All Rights Reserved Elixer Prince</p>
+      <footer class="rounded-t-xl bg-zinc-900 p-4">
+        <p class="md:text-md text-center text-xs font-bold text-zinc-100">
+          Copyright &copy; All Rights Reserved Elixer Prince
+        </p>
       </footer>
     </div>
   </body>

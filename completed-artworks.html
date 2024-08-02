@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-JM">
   <head>
     <meta charset="UTF-8" />
@@ -26,9 +26,11 @@
 
   <body>
     <div class="flex flex-col bg-purple-300">
-      <header class="subheader artworks-header px-4 pt-20 text-white flex flex-col justify-center content-center">
+      <header
+        class="subheader artworks-header flex flex-col content-center justify-center px-4 pt-20 text-white"
+      >
         <nav
-          class="flex z-10 justify-between ps-12 pe-8 py-4 fixed left-0 right-0 top-0 bg-black"
+          class="fixed left-0 right-0 top-0 z-10 flex justify-between bg-black py-4 pe-8 ps-12"
         >
           <a href="./"
             ><img
@@ -41,332 +43,423 @@
               <li>
                 <a
                   href="./"
-                  class="border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                  class="rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                   ><i class="fa-solid fa-house"></i> Home</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="border-2 border-white bg-white text-black px-4 py-2 mx-2 rounded-lg"
+                  class="mx-2 rounded-lg border-2 border-white bg-white px-4 py-2 text-black"
                   ><i class="fa-solid fa-image"></i> Completed Artworks</a
                 >
               </li>
               <li>
                 <a
                   href="contact-me.html"
-                  class="border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                  class="rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                   >Contact Me <i class="fa-solid fa-phone-flip"></i
                 ></a>
               </li>
             </ul>
             <div id="hamburg-icon" class="md:hidden">
-              <i
-              class="fa-solid fa-bars hover:cursor-pointer text-2xl"
-            ></i>
+              <i class="fa-solid fa-bars text-2xl hover:cursor-pointer"></i>
             </div>
           </div>
         </nav>
-        <nav id="mobile-navbar" class="hidden md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black text-white z-20">
-          <div class="flex justify-between items-center ps-12 pe-8 py-4">
+        <nav
+          id="mobile-navbar"
+          class="fixed bottom-0 left-0 right-0 top-0 z-20 hidden bg-black text-white md:hidden"
+        >
+          <div class="flex items-center justify-between py-4 pe-8 ps-12">
             <a href="./"
-            ><img
-              src="./dist/images/site-logo.png"
-              alt="Elixer Studios Logo"
-              class="w-36 hover:scale-105"
+              ><img
+                src="./dist/images/site-logo.png"
+                alt="Elixer Studios Logo"
+                class="w-36 hover:scale-105"
             /></a>
-            <i id="close-btn" class="fa-solid fa-xmark text-3xl cursor-pointer"></i>
+            <i
+              id="close-btn"
+              class="fa-solid fa-xmark cursor-pointer text-3xl"
+            ></i>
           </div>
-          <ul class="font-bold flex flex-col justify-center p-4">
+          <ul class="flex flex-col justify-center p-4 font-bold">
             <li class="my-2">
               <a
                 href="./"
-                class="block border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
+                class="block rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
                 ><i class="fa-solid fa-house"></i> Home</a
               >
             </li>
             <li class="my-2">
               <a
                 href="completed-artworks.html"
-                class="block border-2 border-white bg-white text-black px-4 py-2 rounded-lg"
+                class="block rounded-lg border-2 border-white bg-white px-4 py-2 text-black"
                 ><i class="fa-solid fa-image"></i> Completed Artworks</a
               >
             </li>
             <li class="my-2">
               <a
                 href="contact-me.html"
-                class="block border-2 border-transparent hover:border-yellow-500 px-4 py-2 rounded-lg"
-                ><i class="fa-solid fa-phone-flip"></i> Contact Me</i
-              ></a>
+                class="block rounded-lg border-2 border-transparent px-4 py-2 hover:border-yellow-500"
+                ><i class="fa-solid fa-phone-flip"></i> Contact Me</a
+              >
             </li>
           </ul>
-          <footer class="border-y-2 border-white bg-red mt-4 py-8">
-            <p class="text-center text-zinc-100 text-xs">Copyright &copy; All Rights Reserved Elixer Prince</p>
-          </footer>
+          <div class="bg-red mt-4 border-y-2 border-white py-8">
+            <p class="text-center text-xs text-zinc-100">
+              Copyright &copy; All Rights Reserved Elixer Prince
+            </p>
+          </div>
         </nav>
-        <h1 class="contact-title text-center w-fit text-5xl font-bold border-4 mx-auto border-white mb-4 rounded-md py-2 px-4 md:py-4 md:px-8">
+        <h1
+          class="contact-title mx-auto mb-4 w-fit rounded-md border-4 border-white px-4 py-2 text-center text-5xl font-bold md:px-8 md:py-4"
+        >
           Completed Artworks
         </h1>
       </header>
       <main>
-        <section id="about-me-section" class="p-8 lg:py-12 bg-zinc-950 text-white" aria-labelledby="about-me-heading">
+        <section
+          id="about-me-section"
+          class="bg-zinc-950 p-8 text-white lg:py-12"
+          aria-labelledby="about-me-heading"
+        >
           <header>
-            <h2 id="about-me-heading" class="text-center font-bold text-4xl mb-4">Table of Contents</h2>
+            <h2
+              id="about-me-heading"
+              class="mb-4 text-center text-4xl font-bold"
+            >
+              Table of Contents
+            </h2>
           </header>
           <nav>
             <ul class="font-bold">
-              <li class="hover:bg-black border-transparent mb-2 md:ms-2 hover:scale-105 hover:mx-8 border-2 hover:border-purple-600 rounded-l-2xl rounded-r-md p-2 ps-4">
-                <a href="#anime-cartoon-section" class="block">Anime/Cartoon Illustrations</a>
+              <li
+                class="mb-2 rounded-l-2xl rounded-r-md border-2 border-transparent p-2 ps-4 hover:mx-8 hover:scale-105 hover:border-purple-600 hover:bg-black md:ms-2"
+              >
+                <a href="#anime-cartoon-section" class="block"
+                  >Anime/Cartoon Illustrations</a
+                >
               </li>
-              <li class="hover:bg-black border-transparent border-2 hover:border-purple-600 mb-2 md:ms-2 hover:scale-105 hover:mx-8 rounded-l-2xl rounded-r-md p-2 ps-4">
+              <li
+                class="mb-2 rounded-l-2xl rounded-r-md border-2 border-transparent p-2 ps-4 hover:mx-8 hover:scale-105 hover:border-purple-600 hover:bg-black md:ms-2"
+              >
                 <a href="#semi-realistic-section"
                   >Semi-realistic/Stylized Illustrations</a
                 >
               </li>
-              <li class="hover:bg-black border-transparent border-2 hover:border-purple-600 mb-2 md:ms-2 hover:scale-105 hover:mx-8 rounded-l-2xl rounded-r-md p-2 ps-4"><a href="#portrait-requests-section">Portrait Requests</a></li>
-              <li class="hover:bg-black border-2 border-transparent hover:border-purple-600 mb-2 md:ms-2 hover:scale-105 hover:mx-8 rounded-l-2xl rounded-r-md p-2 ps-4"><a href="#still-life-section">Still-Life Drawings</a></li>
+              <li
+                class="mb-2 rounded-l-2xl rounded-r-md border-2 border-transparent p-2 ps-4 hover:mx-8 hover:scale-105 hover:border-purple-600 hover:bg-black md:ms-2"
+              >
+                <a href="#portrait-requests-section">Portrait Requests</a>
+              </li>
+              <li
+                class="mb-2 rounded-l-2xl rounded-r-md border-2 border-transparent p-2 ps-4 hover:mx-8 hover:scale-105 hover:border-purple-600 hover:bg-black md:ms-2"
+              >
+                <a href="#still-life-section">Still-Life Drawings</a>
+              </li>
             </ul>
           </nav>
         </section>
         <section
-        id="anime-cartoon-section"
-        aria-labelledby="anime-cartoon-header"
+          id="anime-cartoon-section"
+          aria-labelledby="anime-cartoon-header"
         >
-        <header class="section-header">
-          <h2 id="anime-cartoon-header" class="text-center font-bold text-4xl my-8">Anime/Cartoon Illustrations</h2>
-        </header>
-        <article class="m-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/free-fire-boss.png" target="_blank"
-              ><img
-                src="dist/images/free-fire-boss.png"
-                alt="Free Fire Boss"
-                title="Click to see full drawing" class="w-full rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Free Fire Boss</h3>
-              <p class="font-semibold">
-                During a game of free fire (a mobile battle royale), I was
-                thinking to myself, "Damn, the design of her suit looks cool".
-                On a whim, I decided that I had to do an illustration based on
-                it. My goal was to capture her total authority over her
-                subordinates.
-              </p>
+          <header class="section-header">
+            <h2
+              id="anime-cartoon-header"
+              class="my-8 text-center text-4xl font-bold"
+            >
+              Anime/Cartoon Illustrations
+            </h2>
+          </header>
+          <article
+            class="m-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/free-fire-boss.png" target="_blank"
+                ><img
+                  src="dist/images/free-fire-boss.png"
+                  alt="Free Fire Boss"
+                  title="Click to see full drawing"
+                  class="w-full rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">Free Fire Boss</h3>
+                <p class="font-semibold">
+                  During a game of free fire (a mobile battle royale), I was
+                  thinking to myself, "Damn, the design of her suit looks cool".
+                  On a whim, I decided that I had to do an illustration based on
+                  it. My goal was to capture her total authority over her
+                  subordinates.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a
-              href="dist/images/beyond-reality-illustration.jpg"
-              target="_blank"
-              ><img
-                src="dist/images/beyond-reality-illustration.jpg"
-                alt="Beyond Reality Illustration"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Beyond Reality Illustration</h3>
-              <p class="font-semibold">
-                This is an illustration I did that showcases all the main
-                character from my
-                <abbr title="Work In Progress">WIP</abbr> novel Beyond Reality.
-                It was done as way to see how well my characters fit into the
-                same universe.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a
+                href="dist/images/beyond-reality-illustration.jpg"
+                target="_blank"
+                ><img
+                  src="dist/images/beyond-reality-illustration.jpg"
+                  alt="Beyond Reality Illustration"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Beyond Reality Illustration
+                </h3>
+                <p class="font-semibold">
+                  This is an illustration I did that showcases all the main
+                  character from my
+                  <abbr title="Work In Progress">WIP</abbr> novel Beyond
+                  Reality. It was done as way to see how well my characters fit
+                  into the same universe.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/art-prince-pfp.png" target="_blank"
-              ><img
-                src="dist/images/art-prince-pfp.png"
-                alt="Art Prince Prince Profile Picture"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Art Prince PFP</h3>
-              <p class="font-semibold">
-                This was my first Instagram Profile Picture that I made when my
-                account was newer. It is a cartoonified version of myself.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/art-prince-pfp.png" target="_blank"
+                ><img
+                  src="dist/images/art-prince-pfp.png"
+                  alt="Art Prince Prince Profile Picture"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">Art Prince PFP</h3>
+                <p class="font-semibold">
+                  This was my first Instagram Profile Picture that I made when
+                  my account was newer. It is a cartoonified version of myself.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/olive-pfp.jpg" target="_blank"
-              ><img
-                src="dist/images/olive-pfp.jpg"
-                alt="Olive Discord Profile Picture"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="cursor-pointer p-4">
-              <h3 class="text-center text-3xl font-bold">Olive Discord PFP</h3>
-              <p class="font-semibold">
-                This is a profile picture that I made for my friend on Discord.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/olive-pfp.jpg" target="_blank"
+                ><img
+                  src="dist/images/olive-pfp.jpg"
+                  alt="Olive Discord Profile Picture"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Olive Discord PFP
+                </h3>
+                <p class="font-semibold">
+                  This is a profile picture that I made for my friend on
+                  Discord.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/aery-pfp.jpg" target="_blank"
-              ><img
-                src="dist/images/aery-pfp.jpg"
-                alt="Aery Profile Picture"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Aery Discord PFP</h3>
-              <p class="font-semibold">
-                This is a Discord profile picture that I made as a gift for
-                another friend.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/aery-pfp.jpg" target="_blank"
+                ><img
+                  src="dist/images/aery-pfp.jpg"
+                  alt="Aery Profile Picture"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">Aery Discord PFP</h3>
+                <p class="font-semibold">
+                  This is a Discord profile picture that I made as a gift for
+                  another friend.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/emilia-peace-sign.jpg" target="_blank"
-              ><img
-                src="dist/images/emilia-peace-sign.jpg"
-                alt="Emilia Peace Sign"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Emilia Peace Sign</h3>
-              <p class="font-semibold">
-                This is the female main character from my novel Beyond Reality.
-                As you can see, she loves chilling with her cat.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/emilia-peace-sign.jpg" target="_blank"
+                ><img
+                  src="dist/images/emilia-peace-sign.jpg"
+                  alt="Emilia Peace Sign"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Emilia Peace Sign
+                </h3>
+                <p class="font-semibold">
+                  This is the female main character from my novel Beyond
+                  Reality. As you can see, she loves chilling with her cat.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/art-trade.jpg" target="_blank"
-              ><img
-                src="dist/images/art-trade.jpg"
-                alt="Random Art Trade"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Random Art Trade</h3>
-              <p class="font-semibold">
-                This drawing was requested as an art trade on Discord. This
-                character was different from my usual style so I did my best to
-                copy the style and shading.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/art-trade.jpg" target="_blank"
+                ><img
+                  src="dist/images/art-trade.jpg"
+                  alt="Random Art Trade"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">Random Art Trade</h3>
+                <p class="font-semibold">
+                  This drawing was requested as an art trade on Discord. This
+                  character was different from my usual style so I did my best
+                  to copy the style and shading.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </section>
-      <section
-        id="semi-realistic-section"
-        aria-labelledby="semi-realistic-header"
-      >
-        <header class="section-header">
-          <h2 id="semi-realistic-header" class="text-center font-bold text-4xl my-8">
-            Semi-realistic/Stylized Illustrations
-          </h2>
-        </header>
-        <article class="m-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/wlop-eye-study.jpg" target="_blank"
-              ><img
-                src="dist/images/wlop-eye-study.jpg"
-                alt="WLOP Eye Study"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">WLOP Eye Study</h3>
-              <p class="font-semibold">
-                I was on a mission to level up my art so I decided to do a quick
-                sketch based on how wlop rendered his paintings. I eventually
-                decided to stick to an eye since I was using my finger on a
-                phone and rushed it since I wasn't in a good location to draw. I
-                learnt a lot about rendering eyes from this drawing like how to
-                draw attention to it and give it life.
-              </p>
+          </article>
+        </section>
+        <section
+          id="semi-realistic-section"
+          aria-labelledby="semi-realistic-header"
+        >
+          <header class="section-header">
+            <h2
+              id="semi-realistic-header"
+              class="my-8 text-center text-4xl font-bold"
+            >
+              Semi-realistic/Stylized Illustrations
+            </h2>
+          </header>
+          <article
+            class="m-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/wlop-eye-study.jpg" target="_blank"
+                ><img
+                  src="dist/images/wlop-eye-study.jpg"
+                  alt="WLOP Eye Study"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">WLOP Eye Study</h3>
+                <p class="font-semibold">
+                  I was on a mission to level up my art so I decided to do a
+                  quick sketch based on how wlop rendered his paintings. I
+                  eventually decided to stick to an eye since I was using my
+                  finger on a phone and rushed it since I wasn't in a good
+                  location to draw. I learnt a lot about rendering eyes from
+                  this drawing like how to draw attention to it and give it
+                  life.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/leila-rendered.png" target="_blank"
-              ><img
-                src="dist/images/leila-rendered.png"
-                alt="Leila Demichlys Rendered"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Leila Demichlys Rendered</h3>
-              <p class="font-semibold">
-                I had always drawn sketches or anime styled versions of this
-                character but I decided to do a fully rendered illustration to
-                see how she'd look in my semi-realistic style.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/leila-rendered.png" target="_blank"
+                ><img
+                  src="dist/images/leila-rendered.png"
+                  alt="Leila Demichlys Rendered"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Leila Demichlys Rendered
+                </h3>
+                <p class="font-semibold">
+                  I had always drawn sketches or anime styled versions of this
+                  character but I decided to do a fully rendered illustration to
+                  see how she'd look in my semi-realistic style.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/halloween-challenge-entry.jpg" target="_blank"
-              ><img
-                src="dist/images/halloween-challenge-entry.jpg"
-                alt="Halloween Challenge Entry"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Halloween Competition Entry</h3>
-              <p class="font-semibold">
-                I did this drawing for a competition on Discord. My goal for
-                this artwork was to be as unsettling as possible.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a
+                href="dist/images/halloween-challenge-entry.jpg"
+                target="_blank"
+                ><img
+                  src="dist/images/halloween-challenge-entry.jpg"
+                  alt="Halloween Challenge Entry"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Halloween Competition Entry
+                </h3>
+                <p class="font-semibold">
+                  I did this drawing for a competition on Discord. My goal for
+                  this artwork was to be as unsettling as possible.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/duck-girl.jpg" target="_blank"
-              ><img
-                src="dist/images/duck-girl.jpg"
-                alt="Duck Girl Drawing"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center text-3xl font-bold">Duck Girl Drawing</h3>
-              <p class="font-semibold">
-                My friend sent me a picture and I thought the concept was cool
-                so I decided to create a semi-realistic version to see how it
-                would look. This was one of my first semi-realistic drawings so
-                I was experimenting with my workflow.
-              </p>
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/duck-girl.jpg" target="_blank"
+                ><img
+                  src="dist/images/duck-girl.jpg"
+                  alt="Duck Girl Drawing"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Duck Girl Drawing
+                </h3>
+                <p class="font-semibold">
+                  My friend sent me a picture and I thought the concept was cool
+                  so I decided to create a semi-realistic version to see how it
+                  would look. This was one of my first semi-realistic drawings
+                  so I was experimenting with my workflow.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </section>
-      <section
-        id="portrait-requests-section"
-        aria-labelledby="portrait-requests-header"
-      >
-        <header class="section-header">
-          <h2 id="portrait-requests-header" class="text-center font-bold text-4xl my-8">Portrait Requests</h2>
-        </header>
-        <article class="m-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <p class="text-center font-bold text-zinc-800">No Portraits to show as yet. . .</p>
-        </article>
-      </section>
-      <section id="still-life-section" aria-labelledby="still-life-header">
-        <header class="section-header">
-          <h2 id="still-life-header" class="text-center font-bold text-4xl my-8">Still-Life Drawings</h2>
-        </header>
-        <article class="m-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="bg-white rounded-xl hover:scale-105">
-            <a href="dist/images/apple-cider-still-life.jpg" target="_blank"
-              ><img
-                src="dist/images/apple-cider-still-life.jpg"
-                alt="Apple Cider Still Life"
-                title="Click to see full drawing" class="rounded-t-xl"
-            /></a>
-            <div class="p-4 cursor-pointer">
-              <h3 class="text-center font-bold text-3xl">Apple Cider Still-Life</h3>
-              <p class="font-semibold">
-                I got new crayola crayons so I decided to enter a competition
-                where we got a daily prompts. This was the result of one of
-                those prompts entitled &quot;Apple Cider Vinegar&quot;.
-              </p>
+          </article>
+        </section>
+        <section
+          id="portrait-requests-section"
+          aria-labelledby="portrait-requests-header"
+        >
+          <header class="section-header">
+            <h2
+              id="portrait-requests-header"
+              class="my-8 text-center text-4xl font-bold"
+            >
+              Portrait Requests
+            </h2>
+          </header>
+          <article
+            class="m-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <h2 class="text-center font-bold text-zinc-800">
+              No Portraits to show as yet. . .
+            </h2>
+          </article>
+        </section>
+        <section id="still-life-section" aria-labelledby="still-life-header">
+          <header class="section-header">
+            <h2
+              id="still-life-header"
+              class="my-8 text-center text-4xl font-bold"
+            >
+              Still-Life Drawings
+            </h2>
+          </header>
+          <article
+            class="m-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="rounded-xl bg-white hover:scale-105">
+              <a href="dist/images/apple-cider-still-life.jpg" target="_blank"
+                ><img
+                  src="dist/images/apple-cider-still-life.jpg"
+                  alt="Apple Cider Still Life"
+                  title="Click to see full drawing"
+                  class="rounded-t-xl"
+              /></a>
+              <div class="cursor-pointer p-4">
+                <h3 class="text-center text-3xl font-bold">
+                  Apple Cider Still-Life
+                </h3>
+                <p class="font-semibold">
+                  I got new crayola crayons so I decided to enter a competition
+                  where we got a daily prompts. This was the result of one of
+                  those prompts entitled &quot;Apple Cider Vinegar&quot;.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </section>
+          </article>
+        </section>
       </main>
-      <footer class="p-4 bg-zinc-900 rounded-t-xl">
-        <p class="text-center font-bold text-zinc-100 text-xs md:text-md">Copyright &copy; All Rights Reserved Elixer Prince</p>
+      <footer class="rounded-t-xl bg-zinc-900 p-4">
+        <p class="md:text-md text-center text-xs font-bold text-zinc-100">
+          Copyright &copy; All Rights Reserved Elixer Prince
+        </p>
       </footer>
     </div>
   </body>
